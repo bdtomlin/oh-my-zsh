@@ -44,6 +44,8 @@ fi
 if [ -e "$HOME/.aliases-unique" ]; then
   source "$HOME/.aliases-unique"
 fi
+# for postgreql.app
+PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 
 PATH=$PATH:$HOME/bin
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
